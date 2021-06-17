@@ -6,10 +6,14 @@
 # - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
 # - --kubelet-insecure-tls
 # - hostNetwork: true
+![image](https://user-images.githubusercontent.com/39818267/122324091-ca1f7e80-cf5a-11eb-9e56-7f198f2b062b.png)
+
 # 如果yaml内镜像下载失败,可以换另外一个 willdockerhub/metrics-server 具体的镜像版本自己手动查看
 # 此处说明我加serviceaccount是因为我要从我自己的私有harbor里拉取镜像
 # 注意: kubeadm 方式部署的话，在/etc/kubernetes/manifests/kube-apiserver.yaml修改
 #   增加这一句话     - --enable-aggregator-routing=true 开启路由
+![image](https://user-images.githubusercontent.com/39818267/122324171-eb806a80-cf5a-11eb-8564-0b9c6ff19e5f.png)
+
 # 二进制部署的话
 # vi /opt/kubernetes/cfg/kube-apiserver.conf
 ...
