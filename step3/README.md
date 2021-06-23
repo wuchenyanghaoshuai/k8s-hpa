@@ -11,3 +11,5 @@
 # kubectl apply -f setup
 # kubectl apply -f .
 # 执行完yaml文件以后,kubectl get pods -n monitoring 来查看pod是否running
+![image](https://user-images.githubusercontent.com/39818267/123056718-c186e680-d439-11eb-9296-c5d9b8dbfcae.png)
+
