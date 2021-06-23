@@ -23,7 +23,11 @@
 # helm repo list
 # helm install prometheus-adapter stable/prometheus-adapter --namespace kube-system --set prometheus.url=http://prometheus.kube-system,prometheus.port=9090
 # 注意此处需要修改prometheus-adapter的deploy 因为此处他获取的是同namespcace的prometheus,但是咱们的prometheus安装在monitoring这个namespace,所以此处需要修改一下
+![image](https://user-images.githubusercontent.com/39818267/123087865-9f03c600-d457-11eb-9ff3-4b5d727f9ec3.png)
+
 # 修改完成以后查看一下adapter的日志，应该是正常的没有任何问题的
 # helm list -n kube-system 查看到adapter 正常启动即可
 # kubectl get apiservices   此时应该看到两个,一个是metrics-server 一个是prometheus-adapter
 # kubectl get --raw "/apis/custom.metrics.k8s.io/v1beta1"
+![image](https://user-images.githubusercontent.com/39818267/123087913-ae830f00-d457-11eb-9378-5f1339e5d152.png)
+
